@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+claude:
+  api-key: ${CLAUDE_API_KEY:}
+  base-url: ${CLAUDE_BASE_URL:https://api.anthropic.com}
+  model: ${CLAUDE_MODEL:claude-sonnet-4-6}
+  version: ${CLAUDE_VERSION:2023-06-01}
+  max-tokens: ${CLAUDE_MAX_TOKENS:2000}
